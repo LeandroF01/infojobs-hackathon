@@ -1,10 +1,17 @@
+import { useNavigate } from "react-router-dom";
 export const SkillSelection = () => {
+	const navigate = useNavigate();
+
+	const handdleClick = (testName) => {
+		console.log(testName, "handdleClick");
+		navigate(`/test/${testName}`);
+	};
 	const skills = [
 		{
 			testName: "Desafío Maestro de JavaScript",
 			description:
 				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -27,7 +34,7 @@ export const SkillSelection = () => {
 			testName: "Reto del Experto en CSS",
 			description:
 				"Este test evalúa tus conocimientos en CSS (Cascading Style Sheets), el lenguaje utilizado para dar estilo y diseño a los elementos HTML. Preguntas sobre selectores, propiedades, modelos de caja y diseño responsivo pondrán a prueba tu habilidad para crear interfaces visualmente atractivas.",
-			grade: "Aprobado",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -50,7 +57,7 @@ export const SkillSelection = () => {
 			testName: "Examen de Destreza en React",
 			description:
 				"Este test evalúa tus conocimientos en React, una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario interactivas. Preguntas sobre componentes, estados, ciclos de vida y enrutamiento te retarán a mostrar tu experiencia en el desarrollo con React.",
-			grade: "Aprobado",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -73,7 +80,7 @@ export const SkillSelection = () => {
 			testName: "Desafío de Maestría en CSS y Sass",
 			description:
 				"Este test evalúa tus conocimientos en Sass, una extensión de CSS que agrega características adicionales y facilita la escritura de estilos más eficientes. Preguntas sobre variables, mixins, anidamiento y directivas te permitirán demostrar tu dominio en el uso de Sass para estilizar tus proyectos.",
-			grade: "Aprobado",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -93,10 +100,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Cuestionario del Maestro en PHP",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en PHP, un lenguaje de programación utilizado principalmente en el desarrollo web del lado del servidor. Preguntas sobre sintaxis, manipulación de datos, bases de datos y seguridad te desafiarán a demostrar tu experiencia en el uso de PHP para crear aplicaciones web dinámicas.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -116,10 +123,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Examen de Ninja en Java",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Java, un lenguaje de programación versátil y ampliamente utilizado en el desarrollo de software. Preguntas sobre conceptos fundamentales, estructuras de datos, programación orientada a objetos y manejo de excepciones pondrán a prueba tus habilidades en Java.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -139,10 +146,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Evaluación de Expertos en Vue.js",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Vue.js, un framework progresivo de JavaScript para la construcción de interfaces de usuario. Preguntas sobre componentes, directivas, enrutamiento y manejo de estados te desafiarán a mostrar tu experiencia en el desarrollo con Vue.js.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -162,10 +169,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Examen de Dominio en Angular",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Angular, un framework de JavaScript desarrollado por Google para la construcción de aplicaciones web. Preguntas sobre componentes, módulos, enrutamiento y manejo de datos te retarán a demostrar tu habilidad en el desarrollo con Angular.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -185,10 +192,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Cuestionario del As en Svelte",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Svelte, un framework de JavaScript que permite construir interfaces de usuario reactivas y eficientes. Preguntas sobre componentes, propiedades, reactividad y ciclo de vida te permitirán demostrar tu dominio en el desarrollo con Svelte.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -208,10 +215,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Examen de Habilidad en Node.js",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Node.js, un entorno de ejecución de JavaScript que permite ejecutar código JavaScript en el lado del servidor. Preguntas sobre el sistema de módulos, manejo de eventos, creación de servidores y manejo de archivos te desafiarán a mostrar tu experiencia en el desarrollo con Node.js.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -231,10 +238,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Prueba de Competencia en MySQL",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en MySQL, un sistema de gestión de bases de datos relacionales ampliamente utilizado. Preguntas sobre consultas SQL, diseño de tablas, funciones y optimización te retarán a demostrar tu habilidad en el manejo de bases de datos con MySQL.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -254,10 +261,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Evaluación de Dominio en PostgreSQL",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en PostgreSQL, un sistema de gestión de bases de datos relacional de código abierto. Preguntas sobre consultas SQL avanzadas, diseño de esquemas, funciones y transacciones te permitirán demostrar tu experiencia en el manejo de bases de datos con PostgreSQL.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -277,10 +284,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Cuestionario del Experto en MongoDB",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en MongoDB, una base de datos NoSQL orientada a documentos. Preguntas sobre consultas, agregaciones, índices y replicación te desafiarán a demostrar tu experiencia en el manejo de bases de datos con MongoDB.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -300,10 +307,10 @@ export const SkillSelection = () => {
 			],
 		},
 		{
-			testName: "Desafío Maestro de JavaScript",
+			testName: "Examen de Maestría en Express.js",
 			description:
-				"Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
-			grade: "Aprobado",
+				"Este test evalúa tus conocimientos en Express.js, un framework de JavaScript para la construcción de aplicaciones web del lado del servidor. Preguntas sobre enrutamiento, middleware, manejo de solicitudes y respuestas te retarán a demostrar tu habilidad en el desarrollo con Express.js.",
+			grade: "No realizado",
 			questions: [
 				{
 					question: "¿Cuál es la capital de Francia?",
@@ -324,30 +331,25 @@ export const SkillSelection = () => {
 		},
 	];
 
-	// 		Test de conocimientos JavaScript: "Desafío Maestro de JavaScript"
-	// 		Test de conocimientos CSS: "Reto del Experto en CSS"
-	// 		Test de conocimientos React: "Examen de Destreza en React"
-	// Test de conocimientos Sass: "Desafío de Maestría en CSS y Sass"
-	// Test de conocimientos PHP: "Cuestionario del Maestro en PHP"
-	// Test de conocimientos Java: "Examen de Ninja en Java"
-	// Test de conocimientos Vue.js: "Evaluación de Expertos en Vue.js"
-	// Test de conocimientos Angular: "Examen de Dominio en Angular"
-	// Test de conocimientos Svelte: "Cuestionario del As en Svelte"
-	// Test de conocimientos Node.js: "Examen de Habilidad en Node.js"
-	// Test de conocimientos MySQL: "Prueba de Competencia en MySQL"
-	// Test de conocimientos PostgreSQL: "Evaluación de Dominio en PostgreSQL"
-	// Test de conocimientos MongoDB: "Cuestionario del Experto en MongoDB"
-	// Test de conocimientos Express.js: "Examen de Maestría en Express.js"
-
 	return (
 		<>
 			<section className="selection">
 				<h2 className="selection__title"></h2>
 
 				<section>
-					{/* {skills.map((el) => {
-						return <li>{el}</li>;
-					})} */}
+					{skills.map((el) => {
+						return (
+							<article key={el.testName}>
+								<h3>{el.testName}</h3>
+								<p>{el.description}</p>
+								<p className="grade">{el.grade}</p>
+
+								<button onClick={() => handdleClick(el.testName)}>
+									View Questions
+								</button>
+							</article>
+						);
+					})}
 				</section>
 			</section>
 		</>
