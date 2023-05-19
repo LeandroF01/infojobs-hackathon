@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export const SkillTest = () => {
 	const { testName } = useParams();
 	const skills = [
@@ -333,26 +333,142 @@ export const SkillTest = () => {
 		navigate(-1);
 	};
 
-	const filter = skills
-		.filter((el) => {
-			if (el.testName === testName) {
-				return el;
+	const [test, setTest] = useState(null);
+	const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [selectedAnswers, setSelectedAnswers] = useState([]);
+	//const [testIndex, setTestIndex] = useState(0);
+
+	const [minutes, setMinutes] = useState(1);
+	const [seconds, setSeconds] = useState(0);
+	const [showModal, setShowModal] = useState(false);
+
+	const [correctAnswers, setCorrectAnswers] = useState([]);
+	const [result, setResult] = useState(null);
+
+	const [approvalInterval, setApprovalInterval] = useState("");
+
+	useEffect(() => {
+		// Simulación de una llamada a la API para obtener el test específico
+		// Aquí debes implementar la lógica para obtener los datos del test en base al `testName`
+		// Por simplicidad, se utiliza un setTimeout para simular la llamada asincrónica
+		setTimeout(() => {
+			const testFromAPI = skills.find((skill) => skill.testName === testName);
+			setTest(testFromAPI);
+		}, 1000);
+	}, [testName]);
+
+	useEffect(() => {
+		let interval = setInterval(() => {
+			if (seconds > 0) {
+				setSeconds(seconds - 1);
 			}
-		})
-		.map((el) => el.question);
+			if (seconds === 0) {
+				if (minutes === 0) {
+					clearInterval(interval);
+					setShowModal(true);
+				} else {
+					setMinutes(minutes - 1);
+					setSeconds(20);
+				}
+			}
+		}, 1000);
 
-	console.log(filter);
+		return () => {
+			clearInterval(interval);
+		};
+	}, [minutes, seconds]);
 
-	const sadas = filter.map((el) => el);
-	console.log(sadas);
+	if (!test) {
+		return <div>Loading...</div>;
+	}
+
+	const closeModal = () => {
+		setShowModal(false);
+		navigate(-1); // Aquí especifica la ruta a la que deseas regresar
+	};
+
+	const handleAnswerSelect = (questionIndex, answerIndex) => {
+		setSelectedAnswers([...selectedAnswers, answerIndex]);
+
+		if (questionIndex < test.questions.length - 1) {
+			setCurrentQuestion(questionIndex + 1);
+		} else {
+			calculateResult();
+		}
+	};
+
+	const calculateResult = () => {
+		const totalQuestions = test.questions.length;
+		const correctCount = correctAnswers.length;
+		const percentage = (correctCount / totalQuestions) * 100;
+		setResult(percentage);
+
+		if (percentage >= 80) {
+			setApprovalInterval("Aprobado");
+		} else if (percentage >= 60) {
+			setApprovalInterval("Aprobado con condiciones");
+		} else {
+			setApprovalInterval("No aprobado");
+		}
+	};
+
+	const renderQuestions = () => {
+		return test.questions.map((question, index) => (
+			<div key={index}>
+				{currentQuestion === index && (
+					<div>
+						<h3>{question.question}</h3>
+						<ul>
+							{question.options.map((option, optionIndex) => (
+								<li key={optionIndex}>
+									<button
+										onClick={() => handleAnswerSelect(index, optionIndex)}>
+										{option}
+									</button>
+								</li>
+							))}
+						</ul>
+					</div>
+				)}
+			</div>
+		));
+	};
+
+	const renderResult = () => {
+		if (result !== null) {
+			return (
+				<div>
+					<h2>Resultado: {result}%</h2>
+					<h3>Intervalo de aprobación: {approvalInterval}</h3>
+				</div>
+			);
+		}
+		return null;
+	};
+
+	const { description } = test;
 
 	return (
 		<div>
-			<p onClick={handleGoBack}>volver</p>
-			<h1>Skill Test</h1>
-			{/* {filter.map((el) => {
-				<li key={el.question}>{el.question}</li>;
-			})} */}
+			<h1>{testName}</h1>
+			<p>{description}</p>
+			<div>
+				<h1>Countdown Timer</h1>
+				<div>
+					{minutes.toString().padStart(2, "0")}:
+					{seconds.toString().padStart(2, "0")}
+				</div>
+				{showModal && (
+					<div className="modal">
+						<div className="modal-content">
+							<h2>¡Tiempo terminado!</h2>
+							<button onClick={closeModal}>Regresar</button>
+						</div>
+					</div>
+				)}
+			</div>
+			{renderQuestions()}
+			{renderResult()}
 		</div>
 	);
 };
