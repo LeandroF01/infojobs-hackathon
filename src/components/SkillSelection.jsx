@@ -3,7 +3,6 @@ export const SkillSelection = () => {
 	const navigate = useNavigate();
 
 	const handdleClick = (testName) => {
-		console.log(testName, "handdleClick");
 		navigate(`/test/${testName}`);
 	};
 	const skills = [

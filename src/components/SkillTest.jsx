@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-export const SkillTest = () => {
+export const SkillTest = ({ setTestData }) => {
 	const { testName } = useParams();
 	const skills = [
 		{
@@ -354,7 +354,7 @@ export const SkillTest = () => {
 		setTimeout(() => {
 			const testFromAPI = skills.find((skill) => skill.testName === testName);
 			setTest(testFromAPI);
-		}, 1000);
+		}, 800);
 	}, [testName]);
 
 	useEffect(() => {
@@ -388,7 +388,11 @@ export const SkillTest = () => {
 	};
 
 	const handleAnswerSelect = (questionIndex, answerIndex) => {
-		setSelectedAnswers([...selectedAnswers, answerIndex]);
+		setSelectedAnswers((prevSelectedAnswers) => {
+			const updatedSelectedAnswers = [...prevSelectedAnswers];
+			updatedSelectedAnswers[questionIndex] = answerIndex;
+			return updatedSelectedAnswers;
+		});
 
 		if (questionIndex < test.questions.length - 1) {
 			setCurrentQuestion(questionIndex + 1);
@@ -399,15 +403,29 @@ export const SkillTest = () => {
 
 	const calculateResult = () => {
 		const totalQuestions = test.questions.length;
-		const correctCount = correctAnswers.length;
-		const percentage = (correctCount / totalQuestions) * 100;
+		console.log(test.questions);
+		const correctAnswers = test.questions.map(
+			(question) => question.correctAnswer
+		);
+
+		let correctCount = 0;
+
+		for (let i = 0; i < totalQuestions; i++) {
+			const selectedAnswerIndex = selectedAnswers[i];
+			const correctAnswerIndex = correctAnswers[i];
+
+			if (selectedAnswerIndex === correctAnswerIndex) {
+				correctCount++;
+			}
+		}
+		console.log(correctCount);
+
+		const percentage = (100 / totalQuestions) * correctCount;
 		setResult(percentage);
 
-		if (percentage >= 80) {
+		if (percentage >= 60) {
 			setApprovalInterval("Aprobado");
-		} else if (percentage >= 60) {
-			setApprovalInterval("Aprobado con condiciones");
-		} else {
+		} else if (percentage < 50) {
 			setApprovalInterval("No aprobado");
 		}
 	};
@@ -443,6 +461,7 @@ export const SkillTest = () => {
 				</div>
 			);
 		}
+
 		return null;
 	};
 
