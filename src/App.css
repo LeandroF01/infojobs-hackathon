@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800&display=swap');
+
+:root{
+    --shadow-color: 0deg 0% 63%;
+  
+    --shadow-elevation-medium:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+      0.8px 1.8px 2.2px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.1px 4.5px 5.6px -1.7px hsl(var(--shadow-color) / 0.36),
+      5.1px 10.9px 13.5px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
