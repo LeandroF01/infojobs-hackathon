@@ -1,7 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 export const SkillTest = ({ setTestData }) => {
 	const { testName } = useParams();
+
 	const skills = [
 		{
 			testName: "Desafío Maestro de JavaScript",
@@ -410,7 +412,7 @@ export const SkillTest = ({ setTestData }) => {
 
 		let correctCount = 0;
 
-		for (let i = 0; i < totalQuestions; i++) {
+		for (let i = 0; i <= totalQuestions; i++) {
 			const selectedAnswerIndex = selectedAnswers[i];
 			const correctAnswerIndex = correctAnswers[i];
 
@@ -432,13 +434,13 @@ export const SkillTest = ({ setTestData }) => {
 
 	const renderQuestions = () => {
 		return test.questions.map((question, index) => (
-			<div key={index}>
+			<div key={index} className="questions__content">
 				{currentQuestion === index && (
-					<div>
-						<h3>{question.question}</h3>
-						<ul>
+					<div className="questions__format">
+						<h3 className="questions__title">{question.question}</h3>
+						<ul className="questions__content-options">
 							{question.options.map((option, optionIndex) => (
-								<li key={optionIndex}>
+								<li key={optionIndex} className="content-options__list">
 									<button
 										onClick={() => handleAnswerSelect(index, optionIndex)}>
 										{option}
@@ -468,26 +470,26 @@ export const SkillTest = ({ setTestData }) => {
 	const { description } = test;
 
 	return (
-		<div>
-			<h1>{testName}</h1>
-			<p>{description}</p>
-			<div>
-				<h1>Countdown Timer</h1>
-				<div>
+		<section className="skill-test">
+			<h1 className="skill-test__title">{testName}</h1>
+			<p className="skill-test__description">{description}</p>
+			<article className="skill-test__questions">
+				<div className="questions__time">
 					{minutes.toString().padStart(2, "0")}:
 					{seconds.toString().padStart(2, "0")}
 				</div>
-				{showModal && (
+				{renderQuestions()}
+				{/* {showModal && (
 					<div className="modal">
 						<div className="modal-content">
 							<h2>¡Tiempo terminado!</h2>
 							<button onClick={closeModal}>Regresar</button>
 						</div>
 					</div>
-				)}
-			</div>
-			{renderQuestions()}
+				)} */}
+			</article>
+
 			{renderResult()}
-		</div>
+		</section>
 	);
 };
