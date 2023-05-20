@@ -1,5 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import aprobado from "../assets/aprobado.svg";
+import desaprobado from "../assets/desaprobado.svg";
+import "../style/skillTest.css";
 
 export const SkillTest = ({ setTestData }) => {
 	const { testName } = useParams();
@@ -440,11 +443,11 @@ export const SkillTest = ({ setTestData }) => {
 						<h3 className="questions__title">{question.question}</h3>
 						<ul className="questions__content-options">
 							{question.options.map((option, optionIndex) => (
-								<li key={optionIndex} className="content-options__list">
-									<button
-										onClick={() => handleAnswerSelect(index, optionIndex)}>
-										{option}
-									</button>
+								<li
+									key={optionIndex}
+									className="content-options__list"
+									onClick={() => handleAnswerSelect(index, optionIndex)}>
+									{option}
 								</li>
 							))}
 						</ul>
@@ -457,37 +460,42 @@ export const SkillTest = ({ setTestData }) => {
 	const renderResult = () => {
 		if (result !== null) {
 			return (
-				<div>
-					<h2>Resultado: {result}%</h2>
-					<h3>Intervalo de aprobación: {approvalInterval}</h3>
-				</div>
+				<article className="skill__result">
+					<div className="skill__result-modal">
+						<h2 className="skill__result-title">Resultado: {result}%</h2>
+						<img
+							src={approvalInterval === "Aprobado" ? aprobado : desaprobado}
+							alt=""
+						/>
+						<h3 className="skill__result-intervalo">
+							Intervalo de aprobación: {approvalInterval}
+						</h3>
+					</div>
+				</article>
 			);
 		}
 
 		return null;
 	};
 
-	const { description } = test;
-
 	return (
 		<section className="skill-test">
-			<h1 className="skill-test__title">{testName}</h1>
-			<p className="skill-test__description">{description}</p>
 			<article className="skill-test__questions">
+				<h1 className="skill-test__title">{testName}</h1>
+				{renderQuestions()}
 				<div className="questions__time">
 					{minutes.toString().padStart(2, "0")}:
 					{seconds.toString().padStart(2, "0")}
 				</div>
-				{renderQuestions()}
-				{/* {showModal && (
-					<div className="modal">
-						<div className="modal-content">
-							<h2>¡Tiempo terminado!</h2>
-							<button onClick={closeModal}>Regresar</button>
-						</div>
-					</div>
-				)} */}
 			</article>
+			{showModal && (
+				<div className="modal">
+					<div className="modal-content">
+						<h2>¡Tiempo terminado!</h2>
+						<button onClick={closeModal}>Regresar</button>
+					</div>
+				</div>
+			)}
 
 			{renderResult()}
 		</section>

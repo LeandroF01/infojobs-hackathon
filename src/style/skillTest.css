@@ -1,0 +1,134 @@
+
+.skill-test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets//blur.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.skill-test__questions {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50em;
+    min-height: 23em;
+    border-radius: .9em;
+    background: #F5F5F5;
+    overflow: hidden;
+    box-shadow: var(--shadow-elevation-medium);
+   
+}
+
+.skill-test__title {
+    font-size: 1.4em;
+    margin: 0 1em;
+    padding: .8em 0;
+    border-bottom: 2px solid rgba(98, 98, 98, 0.263);
+    color: #167DB7;
+}
+
+
+
+.questions__content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.questions__format {
+    display: flex;
+    flex-direction: column;
+    width: calc(50em - 4em) ; 
+    margin: 1em 2em ;
+}
+.questions__title {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.questions__content-options {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-options__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.5em;
+    border-bottom: 2px solid #63636470;
+    color: #0f172a;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.content-options__list:hover {
+    background-color: #167cb7a5;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute ;
+    width: 100%;
+    height: 100%;
+   background: #167cb743;
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: .7em;
+    width: 25em;
+    height: 25em;
+   
+}
+.questions__time {
+    font-weight: 800;
+    color: #0f172a;
+    text-align: end;
+    margin: 1em;
+}
+
+.skill__result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #167cb724;
+}
+
+.skill__result-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    width: 25em;
+    height: 25em;
+    border-radius: .7em;  
+}
+.skill__result-title{
+    color: #0f172a;
+}
+.skill__result-intervalo{
+    color: #636364fc;
+}
+					
