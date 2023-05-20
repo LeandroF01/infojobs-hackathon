@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    background: #F5F5F5;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-left: 2em;
+}
+.navbar__list-item {
+    cursor: pointer;
+      font-size: 1em;
+}
+.navbar__list-unable {
+    cursor: not-allowed;
+    color: #636364fc;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+
+.navbar__user{
+    display: flex;
+    margin-right: 2em;
+}
