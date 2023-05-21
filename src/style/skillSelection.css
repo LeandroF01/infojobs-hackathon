@@ -7,7 +7,7 @@
 	background-color: #fdfdfd;
     opacity: 0.8;
     background-image:  linear-gradient(#7e7e896a 1px, transparent 1px), linear-gradient(to right, #7e7e896a 1px, #e5e5f7 1px);
-    background-size: 30px 30px;
+    background-size: 30px 30px;   
 }
 .selection__questions {
 	display: flex;
