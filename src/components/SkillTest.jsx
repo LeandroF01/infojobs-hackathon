@@ -5,6 +5,7 @@ import { Result } from "./Result.jsx";
 import { Modal } from "./Modal.jsx";
 import time from "../assets/ExtraTime.svg";
 import skills from "../json/skills.json";
+import confetti from "canvas-confetti";
 import "../style/skillTest.css";
 
 export const SkillTest = ({ setTestData }) => {
@@ -112,6 +113,9 @@ export const SkillTest = ({ setTestData }) => {
 			setApprovalInterval("No aprobado");
 		}
 	};
+	if (approvalInterval === "Aprobado") {
+		confetti();
+	}
 
 	return (
 		<section className="skill-test">
