@@ -1,12 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "./Navbar.jsx";
-import skills from "../json/skills.json";
 import "../style/skillSelection.css";
-export const SkillSelection = () => {
+
+export const SkillSelection = ({ skills }) => {
 	const navigate = useNavigate();
 
 	const handdleClick = (testName) => {
 		navigate(`/test/${testName}`);
+	};
+
+	const condition = (grade) => {
+		console.log(grade);
+		return grade === "Aprobado" ? "aprobado" : null;
 	};
 
 	return (
@@ -25,7 +30,12 @@ export const SkillSelection = () => {
 									{el.description}
 								</p>
 								<div className="selection__questions-interactive">
-									<p className="selection__questions-grade">{el.grade}</p>
+									<p
+										className={`selection__questions-grade ${condition(
+											el.grade
+										)}`}>
+										{el.grade}
+									</p>
 
 									<button
 										className="selection__questions-button"
