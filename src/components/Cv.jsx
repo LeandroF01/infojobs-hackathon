@@ -1,19 +1,37 @@
+import Heading from "../assets/cv/Heading.png";
+import PersonalData from "../assets/cv/CV-PersonalData-CA-Mvp1.png";
+import Suggestion from "../assets/cv/Card-Suggestion.png";
+import Experience from "../assets/cv/Section - Experience.png";
+import Studies from "../assets/cv/Section - Studies.png";
+import Language from "../assets/cv/Frame 214.png";
+import Skills from "../assets/cv/Frame 215.png";
+import Other from "../assets/cv/Frame 216.png";
+import Status from "../assets/cv/Frame 217.png";
+import Info from "../assets/cv/Frame 218.png";
+import Footer from "../assets/cv/Footer.png";
+import Sidebar from "../assets/cv/Sidebar.png";
+
 export const Cv = () => {
 	return (
 		<header className="profile">
-			<img className="profile__user" src="" alt="" />
+			<img className="profile__user" src={Heading} alt="" />
 			<main className="profile__main">
-				<section className="main__user"></section>
-				<section className="main__add"></section>
-				<section className="main__experience"></section>
-				<section className="main__education"></section>
-				<section className="main__skills"></section>
-				<section className="main__other-data"></section>
-				<section className="main__status-preferences"></section>
-				<section className="main__other-info"></section>
+				<img className="main__user" src={PersonalData} alt="" />
+				<img className="main__add" src={Suggestion} alt="" />
+				<img className="main__experience" src={Experience} alt="" />
+				<img className="main__education" src={Studies} alt="" />
+				<img className="main__language" src={Language} alt="" />
+				<img className="main__skills" src={Skills} alt="" />
+				<img className="main__other-data" src={Other} alt="" />
+				<img className="main__status-preferences" src={Status} alt="" />
+				<img className="main__other-info" src={Info} alt="" />
 			</main>
-			<aside className="profile__aside"></aside>
-			<footer className="profile__footer"></footer>
+			<aside className="profile__aside">
+				<img className="aside" src={Sidebar} alt="" />
+			</aside>
+			<footer className="profile__footer">
+				<img className="footer" src={Footer} alt="" />
+			</footer>
 		</header>
 	);
 };

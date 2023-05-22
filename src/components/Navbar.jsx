@@ -1,5 +1,6 @@
 import avatar from "../assets/avatar.png";
 import logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 import "../style/navbar.css";
 
 export const Navbar = () => {
@@ -11,7 +12,9 @@ export const Navbar = () => {
 				</li>
 				<li className="navbar__list-unable">Empleo</li>
 				<li className="navbar__list-unable">Mas Ofertas</li>
-				<li className="navbar__list-unable">CV</li>
+				<Link to="/cv" className="navbar__list-item">
+					CV
+				</Link>
 				<li className="navbar__list-unable">Quien me ve</li>
 				<li className="navbar__list-item">Aptitudes</li>
 			</ul>

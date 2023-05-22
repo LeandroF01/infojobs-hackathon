@@ -1,5 +1,6 @@
 import { SkillSelection } from "./components/SkillSelection.jsx";
 import { SkillTest } from "./components/SkillTest.jsx";
+import { Cv } from "./components/Cv.jsx";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import skill from "./json/skills.json";
@@ -8,7 +9,6 @@ import "./App.css";
 
 function App() {
 	const [selectedSkill, setSelectedSkill] = useState([]);
-	const { testName } = useParams();
 
 	useEffect(() => {
 		const storedSkills = localStorage.getItem("skills");
@@ -22,13 +22,12 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route
-					path="/"
-					element={<SkillSelection skills={selectedSkill} />}></Route>
+				<Route path="/" element={<SkillSelection skills={selectedSkill} />} />
 				<Route
 					path="/test/:testName"
 					element={<SkillTest skills={selectedSkill} />}
 				/>
+				<Route path="/cv" element={<Cv skills={selectedSkill} />} />
 			</Routes>
 		</BrowserRouter>
 	);
