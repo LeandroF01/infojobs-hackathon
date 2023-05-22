@@ -4,11 +4,10 @@ import { Questions } from "./Questions.jsx";
 import { Result } from "./Result.jsx";
 import { Modal } from "./Modal.jsx";
 import time from "../assets/ExtraTime.svg";
-import skills from "../json/skills.json";
 import confetti from "canvas-confetti";
 import "../style/skillTest.css";
 
-export const SkillTest = ({ setTestData }) => {
+export const SkillTest = ({ skills }) => {
 	const { testName } = useParams();
 
 	const navigate = useNavigate();
@@ -109,13 +108,17 @@ export const SkillTest = ({ setTestData }) => {
 
 		if (percentage >= 60) {
 			setApprovalInterval("Aprobado");
+			test.grade = "Aprobado";
 		} else if (percentage < 50) {
 			setApprovalInterval("No aprobado");
 		}
 	};
+
 	if (approvalInterval === "Aprobado") {
 		confetti();
 	}
+
+	localStorage.setItem("skills", JSON.stringify(skills));
 
 	return (
 		<section className="skill-test">
