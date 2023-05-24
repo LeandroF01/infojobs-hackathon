@@ -1,10 +1,10 @@
 import { SkillSelection } from "./components/SkillSelection.jsx";
 import { SkillTest } from "./components/SkillTest.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 import { Cv } from "./components/Cv.jsx";
 import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import skill from "./json/skills.json";
-import { useParams } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
+			<Navbar />
 			<Routes>
 				<Route path="/" element={<SkillSelection skills={selectedSkill} />} />
 				<Route

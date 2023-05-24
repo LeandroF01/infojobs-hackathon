@@ -16,7 +16,9 @@ export const Navbar = () => {
 					CV
 				</Link>
 				<li className="navbar__list-unable">Quien me ve</li>
-				<li className="navbar__list-item">Aptitudes</li>
+				<Link to="/" className="navbar__list-item">
+					Aptitudes
+				</Link>
 			</ul>
 			<div className="navbar__user">
 				<img src={avatar} alt="" />

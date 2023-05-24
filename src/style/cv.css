@@ -1,0 +1,56 @@
+.profile {
+    display: flex;
+}
+.header {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+}
+
+.profile__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3em 5em;
+    gap: 1em;
+}
+
+.main__user {
+}
+.main__add {
+}
+.main__education {
+}
+.main__experience {
+}
+.main__language {
+}
+.main__other-data {
+}
+.main__other-info {
+}
+.main__skills {
+}
+.main__status-preferences {
+}
+.header__user {
+    margin: 5em 0 0 5em;
+}
+.profile__aside {
+}
+.aside {
+}
+.profile__footer {
+    
+}
+
+
+.footer {
+    
+
+}

@@ -10,25 +10,28 @@ import Status from "../assets/cv/Frame 217.png";
 import Info from "../assets/cv/Frame 218.png";
 import Footer from "../assets/cv/Footer.png";
 import Sidebar from "../assets/cv/Sidebar.png";
+import "../style/cv.css";
 
 export const Cv = () => {
 	return (
-		<header className="profile">
-			<img className="profile__user" src={Heading} alt="" />
-			<main className="profile__main">
-				<img className="main__user" src={PersonalData} alt="" />
-				<img className="main__add" src={Suggestion} alt="" />
-				<img className="main__experience" src={Experience} alt="" />
-				<img className="main__education" src={Studies} alt="" />
-				<img className="main__language" src={Language} alt="" />
-				<img className="main__skills" src={Skills} alt="" />
-				<img className="main__other-data" src={Other} alt="" />
-				<img className="main__status-preferences" src={Status} alt="" />
-				<img className="main__other-info" src={Info} alt="" />
-			</main>
-			<aside className="profile__aside">
-				<img className="aside" src={Sidebar} alt="" />
-			</aside>
+		<header className="header">
+			<img className="header__user" src={Heading} alt="" />
+			<section className="profile">
+				<main className="profile__main">
+					<img className="main__user" src={PersonalData} alt="" />
+					<img className="main__add" src={Suggestion} alt="" />
+					<img className="main__experience" src={Experience} alt="" />
+					<img className="main__education" src={Studies} alt="" />
+					<img className="main__language" src={Language} alt="" />
+					<img className="main__skills" src={Skills} alt="" />
+					<img className="main__other-data" src={Other} alt="" />
+					<img className="main__status-preferences" src={Status} alt="" />
+					<img className="main__other-info" src={Info} alt="" />
+				</main>
+				<aside className="profile__aside">
+					<img className="aside" src={Sidebar} alt="" />
+				</aside>
+			</section>
 			<footer className="profile__footer">
 				<img className="footer" src={Footer} alt="" />
 			</footer>
