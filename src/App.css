@@ -9,6 +9,9 @@
       2.1px 4.5px 5.6px -1.7px hsl(var(--shadow-color) / 0.36),
       5.1px 10.9px 13.5px -2.5px hsl(var(--shadow-color) / 0.36);
 }
+a{
+    text-decoration: none;
+}
 button{
     background: none;
     border: none;

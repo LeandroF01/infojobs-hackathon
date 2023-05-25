@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Heading from "../assets/cv/Heading.png";
 import PersonalData from "../assets/cv/CV-PersonalData-CA-Mvp1.png";
 import Suggestion from "../assets/cv/Card-Suggestion.png";
@@ -10,6 +11,7 @@ import Status from "../assets/cv/Frame 217.png";
 import Info from "../assets/cv/Frame 218.png";
 import Footer from "../assets/cv/Footer.png";
 import Sidebar from "../assets/cv/Sidebar.png";
+import star from "../assets/Group.png";
 import "../style/cv.css";
 
 export const Cv = ({ skills }) => {
@@ -26,14 +28,26 @@ export const Cv = ({ skills }) => {
 					<img className="main__user" src={PersonalData} alt="" />
 					<img className="main__add" src={Suggestion} alt="" />
 					<section className="main__aptitudes">
-						{filter.map((aptitud, index) => (
-							<ul key={index} className="main__aptitudes__item">
-								<li className="main__aptitudes__item__title">
-									<img className="main__aptitudes__item__img" src="" alt="" />
+						<section className="aptitudes__header">
+							<h4 className="aptitudes__header-title">Aptitudes</h4>
+
+							<Link to="/" className="aptitudes__header-buttom">
+								ADQUIRIR NUEVA APTITUDES
+							</Link>
+						</section>
+
+						<ul className="main__aptitudes-item">
+							{filter.map((aptitud, index) => (
+								<li key={index} className="aptitudes__item-title">
+									<img
+										className="aptitudes__item-img"
+										src={star}
+										alt="star-skill"
+									/>
 									{aptitud.technology}
 								</li>
-							</ul>
-						))}
+							))}
+						</ul>
 					</section>
 					<img className="main__experience" src={Experience} alt="" />
 					<img className="main__education" src={Studies} alt="" />
