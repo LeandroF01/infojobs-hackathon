@@ -10,7 +10,6 @@ export const SkillSelection = ({ skills }) => {
 	};
 
 	const condition = (grade) => {
-		console.log(grade);
 		return grade === "Aprobado" ? "aprobado" : null;
 	};
 

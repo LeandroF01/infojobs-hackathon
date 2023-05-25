@@ -12,7 +12,12 @@ import Footer from "../assets/cv/Footer.png";
 import Sidebar from "../assets/cv/Sidebar.png";
 import "../style/cv.css";
 
-export const Cv = () => {
+export const Cv = ({ skills }) => {
+	const filter = skills.filter((skill) =>
+		skill.grade === "Aprobado" ? skill : null
+	);
+	console.log(filter);
+
 	return (
 		<header className="header">
 			<img className="header__user" src={Heading} alt="" />
@@ -20,6 +25,16 @@ export const Cv = () => {
 				<main className="profile__main">
 					<img className="main__user" src={PersonalData} alt="" />
 					<img className="main__add" src={Suggestion} alt="" />
+					<section className="main__aptitudes">
+						{filter.map((aptitud, index) => (
+							<ul key={index} className="main__aptitudes__item">
+								<li className="main__aptitudes__item__title">
+									<img className="main__aptitudes__item__img" src="" alt="" />
+									{aptitud.technology}
+								</li>
+							</ul>
+						))}
+					</section>
 					<img className="main__experience" src={Experience} alt="" />
 					<img className="main__education" src={Studies} alt="" />
 					<img className="main__language" src={Language} alt="" />
