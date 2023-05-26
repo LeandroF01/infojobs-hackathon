@@ -4,23 +4,58 @@
         "description":
             "Este test evalúa tus conocimientos en JavaScript, el lenguaje de programación utilizado para crear interactividad en sitios web y aplicaciones. Preguntas sobre conceptos fundamentales, sintaxis, manipulación de objetos y más te desafiarán a demostrar tu dominio en JavaScript.",
         "grade": "No realizado",
-        "technology": "javaScript",
+        "technology": "JavaScript",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál es la forma correcta de declarar una variable en JavaScript?",
+                "options": ["variable x", "var x", "int x", "let x"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones es una forma válida de comentar en JavaScript?",
+                "options": ["<!-- Comentario -->", "// Comentario", "/* Comentario */", "# Comentario"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para concatenar cadenas de texto en JavaScript?",
+                "options": ["+", "-", "*", "/"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones es un bucle en JavaScript?",
+                "options": ["if-else", "for", "switch", "try-catch"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el método utilizado para agregar un elemento al final de un array en JavaScript?",
+                "options": ["push()", "pop()", "shift()", "unshift()"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la función utilizada para convertir una cadena de texto a un número entero en JavaScript?",
+                "options": ["parseFloat()", "parseInt()", "toFixed()", "toString()"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones se utiliza para seleccionar un elemento del DOM en JavaScript?",
+                "options": ["document.getElement()", "document.querySelector()", "document.find()", "document.select()"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el operador de igualdad estricta en JavaScript?",
+                "options": ["==", "===", "=", "!="],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el método utilizado para redondear un número decimal al entero más cercano en JavaScript?",
+                "options": ["Math.ceil()", "Math.floor()", "Math.round()", "Math.random()"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la función utilizada para mostrar un mensaje emergente en JavaScript?",
+                "options": ["console.log()", "alert()", "prompt()", "confirm()"],
+                "correctAnswer": 1
+              }
         ]
     },
     {
@@ -28,23 +63,58 @@
         "description":
             "Este test evalúa tus conocimientos en CSS (Cascading Style Sheets), el lenguaje utilizado para dar estilo y diseño a los elementos HTML. Preguntas sobre selectores, propiedades, modelos de caja y diseño responsivo pondrán a prueba tu habilidad para crear interfaces visualmente atractivas.",
         "grade": "No realizado",
-        "technology": "css",
+        "technology": "CSS",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál es la propiedad CSS utilizada para cambiar el color de fondo de un elemento?",
+                "options": ["background-color", "color", "border-color", "text-color"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones es un selector de clase en CSS?",
+                "options": [".class", "#id", "element", ":hover"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para establecer el espacio entre las letras de un texto?",
+                "options": ["letter-spacing", "word-spacing", "line-height", "text-indent"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para ocultar un elemento sin eliminarlo del flujo del documento?",
+                "options": ["display", "visibility", "opacity", "position"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para centrar horizontalmente un elemento en su contenedor?",
+                "options": ["text-align", "vertical-align", "margin", "float"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para aplicar una sombra alrededor de un elemento?",
+                "options": ["box-shadow", "text-shadow", "border-shadow", "box-outline"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para establecer el tamaño de una fuente de texto?",
+                "options": ["font-size", "text-size", "font-style", "text-style"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones es un selector de ID en CSS?",
+                "options": [".class", "#id", "element", ":hover"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para establecer el espacio entre las palabras de un texto?",
+                "options": ["letter-spacing", "word-spacing", "line-height", "text-indent"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la propiedad CSS utilizada para cambiar el orden de apilamiento de elementos superpuestos?",
+                "options": ["z-index", "position", "float", "display"],
+                "correctAnswer": 0
+              }
         ]
     },
     {
@@ -52,23 +122,78 @@
         "description":
             "Este test evalúa tus conocimientos en React, una biblioteca de JavaScript ampliamente utilizada para construir interfaces de usuario interactivas. Preguntas sobre componentes, estados, ciclos de vida y enrutamiento te retarán a mostrar tu experiencia en el desarrollo con React.",
         "grade": "No realizado",
-        "technology": "react",
+        "technology": "React",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál de las siguientes opciones describe mejor a React?",
+                "options": [
+                  "Una biblioteca de JavaScript para construir interfaces de usuario",
+                  "Un lenguaje de programación",
+                  "Un servidor de base de datos",
+                  "Un sistema operativo"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es la sintaxis utilizada para renderizar un componente de React en el DOM?",
+                "options": [
+                  "ReactDOM.render(<App />, document.getElementById('root'))",
+                  "React.render(<App />, document.getElementById('root'))",
+                  "ReactDOM.renderComponent(<App />, document.getElementById('root'))",
+                  "React.renderComponent(<App />, document.getElementById('root'))"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la forma correcta de definir un componente de función en React?",
+                "options": [
+                  "class MyComponent extends React.Component",
+                  "const MyComponent = React.createClass",
+                  "function MyComponent()",
+                  "const MyComponent = () =>"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el método utilizado para actualizar el estado de un componente en React?",
+                "options": ["setState()", "updateState()", "changeState()", "modifyState()"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el ciclo de vida de un componente de React?",
+                "options": ["Initialization, Rendering, Destruction", "Creation, Update, Removal", "Mounting, Updating, Unmounting", "Start, Process, Finish"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la forma correcta de pasar propiedades (props) a un componente en React?",
+                "options": ["<MyComponent props={data} />", "<MyComponent data={props} />", "<MyComponent {...props} />", "<MyComponent [props] />"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el método utilizado para realizar solicitudes HTTP en React?",
+                "options": ["fetch()", "axios()", "request()", "http()"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la forma correcta de condicionar la renderización de un componente en React?",
+                "options": [
+                  "{condition ? <Component /> : null}",
+                  "{condition && <Component />}",
+                  "{condition || <Component />}",
+                  "{condition ? null : <Component />}"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el paquete utilizado para realizar enrutamiento en una aplicación de React?",
+                "options": ["react-router", "react-navigation", "react-router-dom", "react-route"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el paquete utilizado para gestionar el estado global en una aplicación de React?",
+                "options": ["react-redux", "react-context", "redux", "react-state"],
+                "correctAnswer": 2
+                }
         ]
     },
     {
@@ -76,23 +201,58 @@
         "description":
             "Este test evalúa tus conocimientos en Sass, una extensión de CSS que agrega características adicionales y facilita la escritura de estilos más eficientes. Preguntas sobre variables, mixins, anidamiento y directivas te permitirán demostrar tu dominio en el uso de Sass para estilizar tus proyectos.",
         "grade": "No realizado",
-        "technology": "sass",
+        "technology": "Sass",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál es la extensión de archivo utilizada para los archivos Sass?",
+                "options": [".sass", ".css", ".scss", ".less"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el símbolo utilizado para hacer referencia a un selector anidado en Sass?",
+                "options": [">", "~", "*", "&"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la función utilizada para realizar cálculos matemáticos en Sass?",
+                "options": ["calc()", "math()", "calc()", "calc()"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para compilar un archivo Sass a CSS?",
+                "options": ["sass compile", "sass convert", "sass compile", "sass convert"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para importar un archivo Sass en otro archivo Sass?",
+                "options": ["@use", "@import", "@include", "@extend"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la función utilizada para crear mixins en Sass?",
+                "options": ["@mixin", "@function", "@extend", "@include"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para establecer variables en Sass?",
+                "options": ["$variable", "@var", "@variable", "$var"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la función utilizada para aplicar herencia en Sass?",
+                "options": ["@mixin", "@function", "@extend", "@include"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la función utilizada para aplicar operaciones de color en Sass?",
+                "options": ["darken()", "lighten()", "mix()", "rgba()"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para establecer un bucle en Sass?",
+                "options": ["@each", "@for", "@while", "@loop"],
+                "correctAnswer": 1
+              }
         ]
     },
     {
@@ -100,23 +260,58 @@
         "description":
             "Este test evalúa tus conocimientos en PHP, un lenguaje de programación utilizado principalmente en el desarrollo web del lado del servidor. Preguntas sobre sintaxis, manipulación de datos, bases de datos y seguridad te desafiarán a demostrar tu experiencia en el uso de PHP para crear aplicaciones web dinámicas.",
         "grade": "No realizado",
-        "technology": "php",
+        "technology": "PHP",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
+                "question": "¿Cuál es el símbolo utilizado para concatenar cadenas de texto en PHP?",
+                "options": ["+", ".", ",", "-"],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
+              },
+              {
+                "question": "¿Cuál es la función utilizada para imprimir texto en PHP?",
+                "options": ["print()", "echo()", "printf()", "write()"],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para comparar dos valores en PHP sin tener en cuenta el tipo de dato?",
+                "options": ["==", "===", "!=", "!=="],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el método utilizado para obtener la longitud de una cadena de texto en PHP?",
+                "options": ["length()", "count()", "size()", "strlen()"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la función utilizada para generar un número entero aleatorio en PHP?",
+                "options": ["random()", "rand()", "random_int()", "mt_rand()"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para asignar un valor a una variable en PHP?",
+                "options": ["=", "==", "+=", "-="],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado para redondear un número decimal al entero más cercano en PHP?",
+                "options": ["round()", "ceil()", "floor()", "intval()"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la función utilizada para abrir un archivo en PHP en modo de escritura?",
+                "options": ["open()", "write()", "fopen()", "read()"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el método utilizado para obtener el valor de un elemento de un arreglo en PHP?",
+                "options": ["get()", "value()", "fetch()", "[]"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la función utilizada para obtener la fecha actual en PHP?",
+                "options": ["date()", "time()", "now()", "current_date()"],
+                "correctAnswer": 0
+              }
         ]
     },
     {
@@ -124,23 +319,58 @@
         "description":
             "Este test evalúa tus conocimientos en Java, un lenguaje de programación versátil y ampliamente utilizado en el desarrollo de software. Preguntas sobre conceptos fundamentales, estructuras de datos, programación orientada a objetos y manejo de excepciones pondrán a prueba tus habilidades en Java.",
         "grade": "No realizado",
-        "technology": "java",
+        "technology": "Java",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál es el método principal utilizado para iniciar la ejecución de un programa Java?",
+                "options": ["main()", "start()", "run()", "execute()"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es la palabra clave utilizada para declarar una variable constante en Java?",
+                "options": ["constant", "readonly", "final", "const"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el tipo de datos utilizado para almacenar números enteros en Java?",
+                "options": ["int", "float", "double", "boolean"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la palabra clave utilizada para heredar una clase en Java?",
+                "options": ["inherit", "extends", "implements", "subclass"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para comparar dos valores en Java?",
+                "options": ["==", "===", "!=", "<>"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la palabra clave utilizada para definir un método que no devuelve ningún valor en Java?",
+                "options": ["void", "null", "empty", "none"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado para obtener la longitud de un arreglo en Java?",
+                "options": ["length()", "size()", "count()", "sizeOf()"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la palabra clave utilizada para detener la ejecución de un bucle en Java?",
+                "options": ["exit", "stop", "break", "return"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el tipo de datos utilizado para representar un solo carácter en Java?",
+                "options": ["char", "string", "character", "varchar"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado para convertir una cadena de texto a un número entero en Java?",
+                "options": ["parseInt()", "valueOf()", "toInteger()", "cast()"],
+                "correctAnswer": 0
+              }
         ]
     },
     {
@@ -148,23 +378,58 @@
         "description":
             "Este test evalúa tus conocimientos en Vue.js, un framework progresivo de JavaScript para la construcción de interfaces de usuario. Preguntas sobre componentes, directivas, enrutamiento y manejo de estados te desafiarán a mostrar tu experiencia en el desarrollo con Vue.js.",
         "grade": "No realizado",
-        "technology": "vue",
+        "technology": "Vue.js",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál es el ciclo de vida de un componente en Vue.js?",
+                "options": ["create", "initialize", "start", "mounted"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para mostrar valores dinámicos en Vue.js?",
+                "options": ["v-if", "v-for", "v-bind", "v-show"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la opción utilizada para establecer el estado inicial de un componente en Vue.js?",
+                "options": ["data", "props", "computed", "methods"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es la sintaxis utilizada para enlazar datos a un atributo HTML en Vue.js?",
+                "options": ["v-bind", "v-model", "v-on", "v-html"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para manejar eventos en Vue.js?",
+                "options": ["v-model", "v-bind", "v-on", "v-show"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para repetir elementos en Vue.js?",
+                "options": ["v-for", "v-if", "v-bind", "v-show"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la sintaxis utilizada para definir un componente en Vue.js?",
+                "options": ["<component>", "<vue-component>", "<vue>", "<template>"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la opción utilizada para calcular propiedades computadas en Vue.js?",
+                "options": ["data", "props", "computed", "methods"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para mostrar o ocultar elementos en Vue.js?",
+                "options": ["v-if", "v-show", "v-bind", "v-for"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la opción utilizada para manejar eventos en un componente en Vue.js?",
+                "options": ["data", "props", "computed", "methods"],
+                "correctAnswer": 3
+              }
         ]
     },
     {
@@ -172,23 +437,58 @@
         "description":
             "Este test evalúa tus conocimientos en Angular, un framework de JavaScript desarrollado por Google para la construcción de aplicaciones web. Preguntas sobre componentes, módulos, enrutamiento y manejo de datos te retarán a demostrar tu habilidad en el desarrollo con Angular.",
         "grade": "No realizado",
-        "technology": "angular",
+        "technology": "Angular",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
+                "question": "¿Cuál es el comando utilizado para crear un nuevo componente en Angular?",
+                "options": ["ng new", "ng generate component", "ng create component", "ng component"],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+              },
+              {
+                "question": "¿Cuál es el decorador utilizado para definir un componente en Angular?",
+                "options": ["@Component", "@Directive", "@Module", "@Injectable"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el ciclo de vida de un componente en Angular?",
+                "options": ["create", "initialize", "start", "ngOnInit"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el archivo principal de configuración en Angular?",
+                "options": ["index.html", "package.json", "angular.json", "main.ts"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el decorador utilizado para inyectar dependencias en Angular?",
+                "options": ["@Component", "@Directive", "@Injectable", "@Module"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el módulo utilizado para realizar peticiones HTTP en Angular?",
+                "options": ["@angular/router", "@angular/core", "@angular/common", "@angular/http"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para iterar sobre elementos en Angular?",
+                "options": ["ng-if", "ng-for", "ng-bind", "ng-show"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para compilar y ejecutar una aplicación Angular?",
+                "options": ["ng serve", "ng build", "ng run", "ng start"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el servicio utilizado para realizar peticiones HTTP en Angular?",
+                "options": ["HttpClient", "HttpService", "HttpModule", "HttpRequest"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el decorador utilizado para definir una ruta en Angular?",
+                "options": ["@Route", "@Router", "@Path", "@NgModule"],
+                "correctAnswer": 0
+              }
         ]
     },
     {
@@ -196,23 +496,63 @@
         "description":
             "Este test evalúa tus conocimientos en Svelte, un framework de JavaScript que permite construir interfaces de usuario reactivas y eficientes. Preguntas sobre componentes, propiedades, reactividad y ciclo de vida te permitirán demostrar tu dominio en el desarrollo con Svelte.",
         "grade": "No realizado",
-        "technology": "svelte",
+        "technology": "Svelte",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Cuál de las siguientes opciones describe mejor a Svelte?",
+                "options": [
+                  "Un framework basado en componentes",
+                  "Un lenguaje de programación",
+                  "Una librería de manipulación del DOM",
+                  "Un compilador de JavaScript"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es la extensión de archivo utilizada para los componentes de Svelte?",
+                "options": [".svelte", ".html", ".js", ".sv"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la forma correcta de declarar una variable reactiva en Svelte?",
+                "options": ["let x;", "var x;", "{#x}", "{$x}"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el ciclo de vida principal en un componente de Svelte?",
+                "options": ["onMount", "onUpdate", "onDestroy", "onCreate"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para la interpolación en Svelte?",
+                "options": ["{{}}", "{% %}", "{@ @}", "{# #}"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la forma correcta de ejecutar una función al hacer clic en un elemento en Svelte?",
+                "options": ["{click}", "on:click", "@click", "{@click}"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la sintaxis utilizada para realizar una declaración condicional en Svelte?",
+                "options": ["{% if condition %}", "{if condition}", "{#if condition}", "{@if condition}"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la directiva utilizada para iterar sobre una lista en Svelte?",
+                "options": ["{#each}", "{% for}", "{for}", "{@each}"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es la forma correcta de importar un módulo en un componente de Svelte?",
+                "options": ["{% import module %}", "import module from 'path'", "import module;", "{@import module}"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la forma correcta de crear un componente reutilizable en Svelte?",
+                "options": ["export default Component;", "export Component from 'path';", "Component.export = {};", "Component.create();"],
+                "correctAnswer": 0
+              }
         ]
     },
     {
@@ -220,23 +560,68 @@
         "description":
             "Este test evalúa tus conocimientos en Node.js, un entorno de ejecución de JavaScript que permite ejecutar código JavaScript en el lado del servidor. Preguntas sobre el sistema de módulos, manejo de eventos, creación de servidores y manejo de archivos te desafiarán a mostrar tu experiencia en el desarrollo con Node.js.",
         "grade": "No realizado",
-        "technology": "node",
+        "technology": "Node.js",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
+                "question": "¿Qué es Node.js?",
+                "options": [
+                  "Un servidor web",
+                  "Un lenguaje de programación",
+                  "Un framework de JavaScript",
+                  "Un entorno de ejecución de JavaScript del lado del servidor"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál de las siguientes opciones es una característica de Node.js?",
+                "options": [
+                  "Es un lenguaje de programación interpretado",
+                  "Es asincrónico y basado en eventos",
+                  "Solo puede ejecutar código JavaScript en el cliente",
+                  "No es compatible con aplicaciones web"
+                ],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+              },
+              {
+                "question": "¿Cuál es el gestor de paquetes utilizado en Node.js?",
+                "options": ["npm", "git", "yarn", "node"],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es la forma correcta de importar un módulo en Node.js?",
+                "options": ["import module from 'path'", "import module;", "require('module')", "{@import module}"],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para instalar un paquete en Node.js?",
+                "options": ["install", "add", "require", "npm install"],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el objeto global en Node.js?",
+                "options": ["window", "global", "document", "node"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el módulo utilizado para crear un servidor HTTP en Node.js?",
+                "options": ["http", "fs", "path", "express"],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado para leer un archivo en Node.js?",
+                "options": ["fs.read()", "fs.readFile()", "fs.write()", "fs.writeFile()"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para ejecutar un archivo JavaScript en Node.js?",
+                "options": ["run", "node", "execute", "start"],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es la forma correcta de exportar una función en un módulo de Node.js?",
+                "options": ["export default myFunction;", "export myFunction from 'path';", "module.exports = myFunction;", "exports.myFunction = myFunction;"],
+                "correctAnswer": 2
+              }
         ]
     },
     {
@@ -244,23 +629,108 @@
         "description":
             "Este test evalúa tus conocimientos en MySQL, un sistema de gestión de bases de datos relacionales ampliamente utilizado. Preguntas sobre consultas SQL, diseño de tablas, funciones y optimización te retarán a demostrar tu habilidad en el manejo de bases de datos con MySQL.",
         "grade": "No realizado",
-        "technology": "mysql",
+        "technology": "MySQL",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Qué es MySQL?",
+                "options": [
+                  "Un lenguaje de programación",
+                  "Un servidor web",
+                  "Un sistema de gestión de bases de datos relacional",
+                  "Un framework de desarrollo web"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una base de datos en MySQL?",
+                "options": [
+                  "CREATE DATABASE",
+                  "INSERT INTO",
+                  "SELECT * FROM",
+                  "UPDATE"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una tabla en MySQL?",
+                "options": [
+                  "CREATE TABLE",
+                  "ALTER TABLE",
+                  "DROP TABLE",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para insertar datos en una tabla en MySQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para seleccionar datos de una tabla en MySQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para actualizar datos en una tabla en MySQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para eliminar datos de una tabla en MySQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para comparar valores en MySQL?",
+                "options": [
+                  "=",
+                  "==",
+                  "<>",
+                  "!="
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para establecer una conexión con una base de datos en MySQL?",
+                "options": [
+                  "CREATE CONNECTION",
+                  "OPEN CONNECTION",
+                  "CONNECT",
+                  "USE"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para cerrar una conexión en MySQL?",
+                "options": [
+                  "CLOSE CONNECTION",
+                  "END CONNECTION",
+                  "DISCONNECT",
+                  "QUIT"
+                ],
+                "correctAnswer": 3
+              }
         ]
     },
     {
@@ -268,23 +738,108 @@
         "description":
             "Este test evalúa tus conocimientos en PostgreSQL, un sistema de gestión de bases de datos relacional de código abierto. Preguntas sobre consultas SQL avanzadas, diseño de esquemas, funciones y transacciones te permitirán demostrar tu experiencia en el manejo de bases de datos con PostgreSQL.",
         "grade": "No realizado",
-        "technology": "postgresql",
+        "technology": "PostgreSQL",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Qué es PostgreSQL?",
+                "options": [
+                  "Un lenguaje de programación",
+                  "Un servidor web",
+                  "Un sistema de gestión de bases de datos relacional",
+                  "Un framework de desarrollo web"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una base de datos en PostgreSQL?",
+                "options": [
+                  "CREATE DATABASE",
+                  "INSERT INTO",
+                  "SELECT * FROM",
+                  "UPDATE"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una tabla en PostgreSQL?",
+                "options": [
+                  "CREATE TABLE",
+                  "ALTER TABLE",
+                  "DROP TABLE",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para insertar datos en una tabla en PostgreSQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para seleccionar datos de una tabla en PostgreSQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para actualizar datos en una tabla en PostgreSQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para eliminar datos de una tabla en PostgreSQL?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "DELETE FROM"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para comparar valores en PostgreSQL?",
+                "options": [
+                  "=",
+                  "==",
+                  "<>",
+                  "!="
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para establecer una conexión con una base de datos en PostgreSQL?",
+                "options": [
+                  "CREATE CONNECTION",
+                  "OPEN CONNECTION",
+                  "CONNECT",
+                  "USE"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para cerrar una conexión en PostgreSQL?",
+                "options": [
+                  "CLOSE CONNECTION",
+                  "END CONNECTION",
+                  "DISCONNECT",
+                  "QUIT"
+                ],
+                "correctAnswer": 3
+              }
         ]
     },
     {
@@ -292,23 +847,108 @@
         "description":
             "Este test evalúa tus conocimientos en MongoDB, una base de datos NoSQL orientada a documentos. Preguntas sobre consultas, agregaciones, índices y replicación te desafiarán a demostrar tu experiencia en el manejo de bases de datos con MongoDB.",
         "grade": "No realizado",
-        "technology": "mongodb",
+        "technology": "MongoDB",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
+                "question": "¿Qué es MongoDB?",
+                "options": [
+                  "Un lenguaje de programación",
+                  "Un servidor web",
+                  "Una base de datos relacional",
+                  "Una base de datos NoSQL orientada a documentos"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el formato de almacenamiento de datos en MongoDB?",
+                "options": [
+                  "Tablas",
+                  "Documentos",
+                  "Registros",
+                  "Columnas"
+                ],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una nueva base de datos en MongoDB?",
+                "options": [
+                  "CREATE DATABASE",
+                  "USE DATABASE",
+                  "CREATE COLLECTION",
+                  "USE COLLECTION"
+                ],
                 "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para crear una nueva colección en MongoDB?",
+                "options": [
+                  "CREATE DATABASE",
+                  "USE DATABASE",
+                  "CREATE COLLECTION",
+                  "USE COLLECTION"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para insertar un documento en una colección en MongoDB?",
+                "options": [
+                  "INSERT INTO",
+                  "UPDATE",
+                  "SELECT * FROM",
+                  "INSERT"
+                ],
+                "correctAnswer": 3
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para obtener todos los documentos de una colección en MongoDB?",
+                "options": [
+                  "GET",
+                  "FETCH",
+                  "FIND",
+                  "SELECT"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para actualizar un documento en una colección en MongoDB?",
+                "options": [
+                  "UPDATE",
+                  "MODIFY",
+                  "ALTER",
+                  "CHANGE"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para eliminar un documento de una colección en MongoDB?",
+                "options": [
+                  "REMOVE",
+                  "DELETE",
+                  "DROP",
+                  "ERASE"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el operador utilizado para realizar consultas de igualdad en MongoDB?",
+                "options": [
+                  "=",
+                  "==",
+                  "$eq",
+                  "$ne"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para establecer una conexión con MongoDB desde la línea de comandos?",
+                "options": [
+                  "CONNECT",
+                  "USE",
+                  "START",
+                  "MONGO"
+                ],
+                "correctAnswer": 3
+              }
         ]
     },
     {
@@ -316,23 +956,108 @@
         "description":
             "Este test evalúa tus conocimientos en Express.js, un framework de JavaScript para la construcción de aplicaciones web del lado del servidor. Preguntas sobre enrutamiento, middleware, manejo de solicitudes y respuestas te retarán a demostrar tu habilidad en el desarrollo con Express.js.",
         "grade": "No realizado",
-        "technology": "express.js",
+        "technology": "Express.js",
         "questions": [
             {
-                "question": "¿Cuál es la capital de Francia?",
-                "options": ["Madrid", "París", "Londres", "Roma"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿Cuál es el símbolo químico del oro?",
-                "options": ["Ag", "Au", "Pt", "Hg"],
-                "correctAnswer": 1
-            },
-            {
-                "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
-                "options": ["1939", "1941", "1945", "1947"],
+                "question": "¿Qué es Express.js?",
+                "options": [
+                  "Un lenguaje de programación",
+                  "Un servidor web",
+                  "Un framework de aplicaciones web",
+                  "Una base de datos relacional"
+                ],
+                "correctAnswer": 2
+              },
+              {
+                "question": "¿Cuál es la función principal de Express.js?",
+                "options": [
+                  "Crear rutas y manejar solicitudes HTTP",
+                  "Generar consultas SQL",
+                  "Realizar operaciones CRUD en bases de datos",
+                  "Estilizar el contenido web"
+                ],
                 "correctAnswer": 0
-            }
+              },
+              {
+                "question": "¿Cuál es el comando utilizado para instalar Express.js en un proyecto de Node.js?",
+                "options": [
+                  "npm install express",
+                  "npm express install",
+                  "npm add express",
+                  "npm express add"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el objeto principal de Express.js utilizado para crear una aplicación?",
+                "options": [
+                  "app",
+                  "server",
+                  "router",
+                  "request"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado en Express.js para manejar una solicitud GET?",
+                "options": [
+                  "get()",
+                  "post()",
+                  "put()",
+                  "delete()"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el método utilizado en Express.js para manejar una solicitud POST?",
+                "options": [
+                  "get()",
+                  "post()",
+                  "put()",
+                  "delete()"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el middleware utilizado en Express.js para analizar los datos enviados en una solicitud POST?",
+                "options": [
+                  "json()",
+                  "urlencoded()",
+                  "static()",
+                  "cookieParser()"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el método utilizado en Express.js para renderizar una plantilla con datos dinámicos?",
+                "options": [
+                  "render()",
+                  "send()",
+                  "redirect()",
+                  "json()"
+                ],
+                "correctAnswer": 0
+              },
+              {
+                "question": "¿Cuál es el código utilizado en Express.js para iniciar el servidor en un puerto específico?",
+                "options": [
+                  "app.start(port)",
+                  "app.listen(port)",
+                  "app.run(port)",
+                  "app.startServer(port)"
+                ],
+                "correctAnswer": 1
+              },
+              {
+                "question": "¿Cuál es el método utilizado en Express.js para redirigir a otra ruta?",
+                "options": [
+                  "get()",
+                  "post()",
+                  "put()",
+                  "redirect()"
+                ],
+                "correctAnswer": 3
+              }
         ]
     }
 ]
