@@ -37,16 +37,20 @@ export const Cv = ({ skills }) => {
 						</section>
 
 						<ul className="main__aptitudes-item">
-							{filter.map((aptitud, index) => (
-								<li key={index} className="aptitudes__item-title">
-									<img
-										className="aptitudes__item-img"
-										src={star}
-										alt="star-skill"
-									/>
-									{aptitud.technology}
-								</li>
-							))}
+							{filter.length !== 0 ? (
+								filter.map((aptitud, index) => (
+									<li key={index} className="aptitudes__item-title">
+										<img
+											className="aptitudes__item-img"
+											src={star}
+											alt="star-skill"
+										/>
+										{aptitud.technology}
+									</li>
+								))
+							) : (
+								<p>No tengo Aptitudes</p>
+							)}
 						</ul>
 					</section>
 					<img className="main__experience" src={Experience} alt="" />

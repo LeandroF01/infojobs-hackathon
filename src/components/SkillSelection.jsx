@@ -16,7 +16,6 @@ export const SkillSelection = ({ skills }) => {
 	return (
 		<>
 			<section className="selection">
-				<h2 className="selection__title">Test de Aptitudes</h2>
 				<section className="selection__questions">
 					{filter.map((el) => {
 						return (
