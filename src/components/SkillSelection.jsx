@@ -5,12 +5,12 @@ import "../style/skillSelection.css";
 export const SkillSelection = ({ skills }) => {
 	const navigate = useNavigate();
 
+	const filter = skills.filter((skill) =>
+		skill.grade !== "Aprobado" ? skill : null
+	);
+
 	const handdleClick = (testName) => {
 		navigate(`/test/${testName}`);
-	};
-
-	const condition = (grade) => {
-		return grade === "Aprobado" ? "aprobado" : null;
 	};
 
 	return (
@@ -18,7 +18,7 @@ export const SkillSelection = ({ skills }) => {
 			<section className="selection">
 				<h2 className="selection__title">Test de Aptitudes</h2>
 				<section className="selection__questions">
-					{skills.map((el) => {
+					{filter.map((el) => {
 						return (
 							<article
 								className="selection__questions-content"
@@ -28,12 +28,7 @@ export const SkillSelection = ({ skills }) => {
 									{el.description}
 								</p>
 								<div className="selection__questions-interactive">
-									<p
-										className={`selection__questions-grade ${condition(
-											el.grade
-										)}`}>
-										{el.grade}
-									</p>
+									<p className="selection__questions-grade">{el.grade}</p>
 
 									<button
 										className="selection__questions-button"
