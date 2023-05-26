@@ -53,13 +53,13 @@ export const Cv = ({ skills }) => {
 
 	return (
 		<header className="header">
+			<img
+				className="header__user"
+				src={isMobile ? HeadingCell : Heading}
+				alt=""
+			/>
 			<section className="profile">
 				<main className="profile__main">
-					<img
-						className="header__user"
-						src={isMobile ? HeadingCell : Heading}
-						alt=""
-					/>
 					<img
 						className="main__user"
 						src={isMobile ? PersonalDataCell : PersonalData}
