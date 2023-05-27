@@ -23,12 +23,14 @@
 	justify-content: space-between;
 	flex-direction: column;
 	max-width: 26em;
-	height: 22em;
+	min-height: 22em;
 	background: rgba(255, 255, 255, 0.845);
 	border-radius: 0.5em;
 	border: 1px solid rgba(0, 0, 0, 0.059);
 	box-shadow: var(--shadow-elevation-medium);
+	position: relative;
 }
+
 .selection__questions-description {
 	color: #565657fc;
 	margin: 0 1em;
@@ -68,4 +70,91 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: 1em;
+}
+
+.selection__questions-image {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	height: 4em;
+	margin: 0.5em 2em;
+	transform: translateY(-5px);
+}
+.selection__questions-image img {
+	width: 2.5em;
+	z-index: 1;
+}
+
+.selection__questions-image::before {
+	content: "";
+	display: inline-block;
+	width: 4em;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: absolute;
+	transform: translateX(20%);
+	overflow: hidden;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.201);
+	background: rgba(255, 255, 255, 0.063);
+	border-right: 1px solid rgba(77, 76, 76, 0.61);
+	border-top: 1px solid rgba(94, 94, 94, 0.416);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	z-index: 1;
+}
+
+.javascript:hover {
+	box-shadow: var(--shadow-elevation-js);
+}
+
+.css:hover {
+	box-shadow: var(--shadow-elevation-css);
+}
+.react:hover {
+	box-shadow: var(--shadow-elevation-react);
+}
+
+.sass:hover {
+	box-shadow: var(--shadow-elevation-sass);
+}
+
+.php:hover {
+	box-shadow: var(--shadow-elevation-php);
+}
+
+.java:hover {
+	box-shadow: var(--shadow-elevation-java);
+}
+
+.vue:hover {
+	box-shadow: var(--shadow-elevation-vue);
+}
+
+.angular:hover {
+	box-shadow: var(--shadow-elevation-angular);
+}
+
+.svelte:hover {
+	box-shadow: var(--shadow-elevation-svelte);
+}
+
+.node:hover {
+	box-shadow: var(--shadow-elevation-node);
+}
+
+.mysql:hover {
+	box-shadow: var(--shadow-elevation-mysql);
+}
+
+
+.postgresql:hover {
+	box-shadow: var(--shadow-elevation-postgresql);
+}
+
+.mongodb:hover {
+	box-shadow: var(--shadow-elevation-mongodb);
+}
+
+.express:hover {
+	box-shadow: var(--shadow-elevation-express);
 }
