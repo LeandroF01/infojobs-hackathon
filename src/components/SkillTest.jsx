@@ -21,7 +21,7 @@ export const SkillTest = ({ skills }) => {
 	const [selectedAnswers, setSelectedAnswers] = useState([]);
 	//const [testIndex, setTestIndex] = useState(0);
 
-	const [minutes, setMinutes] = useState(1);
+	const [minutes, setMinutes] = useState(10);
 	const [seconds, setSeconds] = useState(0);
 	const [showModal, setShowModal] = useState(false);
 
@@ -40,18 +40,15 @@ export const SkillTest = ({ skills }) => {
 	}, [testName]);
 
 	useEffect(() => {
+		let totalSeconds = minutes * 60 + seconds;
 		let interval = setInterval(() => {
-			if (seconds > 0) {
-				setSeconds(seconds - 1);
-			}
-			if (seconds === 0) {
-				if (minutes === 0) {
-					clearInterval(interval);
-					setShowModal(true);
-				} else {
-					setMinutes(minutes - 1);
-					setSeconds(20);
-				}
+			if (totalSeconds > 0) {
+				totalSeconds--;
+				setMinutes(Math.floor(totalSeconds / 60));
+				setSeconds(totalSeconds % 60);
+			} else {
+				clearInterval(interval);
+				setShowModal(true);
 			}
 		}, 1000);
 
@@ -110,6 +107,7 @@ export const SkillTest = ({ skills }) => {
 			setApprovalInterval("Aprobado");
 			test.grade = "Aprobado";
 		} else if (percentage < 50) {
+			test.grade = "No aprobado";
 			setApprovalInterval("No aprobado");
 		}
 	};
