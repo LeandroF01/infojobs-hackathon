@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	max-width: 50em;
+	width: 50em;
 	min-height: 23em;
 	border-radius: 0.9em;
 	background: #f5f5f5;
@@ -39,8 +39,16 @@
 .questions__format {
 	display: flex;
 	flex-direction: column;
-	max-width: calc(50em - 4em);
+	width: calc(50em - 4em);
 	margin: 1em 2em;
+}
+@media (max-width: 800px) {
+	.skill-test__questions {
+		max-width: 100%;
+	}
+	.questions__format {
+		max-width: calc(40em - 4em);
+	}
 }
 .questions__title {
 	font-size: 1.1em;
