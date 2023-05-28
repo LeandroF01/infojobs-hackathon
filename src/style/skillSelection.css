@@ -36,10 +36,14 @@
 	margin: 0 1em;
 }
 .selection__questions-grade {
-	color: #636364b2;
+	color: #656566;
 	font-size: 0.9em;
-	font-weight: 300;
+	font-weight: 400;
 }
+.timer{
+	color: red;
+}
+
 .aprobado {
 	color: green;
 }

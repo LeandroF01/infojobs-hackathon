@@ -46,8 +46,11 @@
 
 .main__aptitudes-item {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1em;
 	padding: 1.5em;
+	font-size: 1em;
+	color:#838080;
 }
 .aptitudes__item-title {
 	display: flex;
