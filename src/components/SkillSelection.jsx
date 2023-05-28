@@ -71,7 +71,6 @@ export const SkillSelection = ({ skills }) => {
 			const noAprobadoSkills = skills.filter(
 				(skill) => skill.grade === "No aprobado"
 			);
-			console.log(noAprobadoSkills.length);
 			if (noAprobadoSkills.length > 0) {
 				setCanRetry(false);
 

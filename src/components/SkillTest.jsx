@@ -87,7 +87,6 @@ export const SkillTest = ({ skills }) => {
 
 	const calculateResult = () => {
 		const totalQuestions = test.questions.length;
-		console.log(test.questions);
 		const correctAnswers = test.questions.map(
 			(question) => question.correctAnswer
 		);
