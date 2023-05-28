@@ -21,14 +21,27 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<Navbar />
 			<Routes>
-				<Route path="/" element={<SkillSelection skills={selectedSkill} />} />
+				<Route
+					path="/"
+					element={
+						<>
+							<Navbar /> <SkillSelection skills={selectedSkill} />
+						</>
+					}
+				/>
 				<Route
 					path="/test/:testName"
 					element={<SkillTest skills={selectedSkill} />}
 				/>
-				<Route path="/cv" element={<Cv skills={selectedSkill} />} />
+				<Route
+					path="/cv"
+					element={
+						<>
+							<Navbar /> <Cv skills={selectedSkill} />
+						</>
+					}
+				/>
 			</Routes>
 		</BrowserRouter>
 	);
