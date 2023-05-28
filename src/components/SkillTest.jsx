@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Questions } from "./Questions.jsx";
 import { Result } from "./Result.jsx";
 import { Modal } from "./Modal.jsx";
+import { Orbit } from "@uiball/loaders";
 import time from "../assets/ExtraTime.svg";
 import confetti from "canvas-confetti";
 import "../style/skillTest.css";
@@ -58,7 +59,11 @@ export const SkillTest = ({ skills }) => {
 	}, [minutes, seconds]);
 
 	if (!test) {
-		return <div>Loading...</div>;
+		return (
+			<div className="loaders">
+				<Orbit size={35} color="#231F20" />
+			</div>
+		);
 	}
 
 	const closeModal = () => {
