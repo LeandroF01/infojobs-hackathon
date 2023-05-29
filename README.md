@@ -43,11 +43,6 @@ Aquí se presentan algunas capturas de pantalla del proyecto:
 
 ![Aprobación de aptitud](./src/assets/readme/start.png)
 
-## Instalación
-
-1. Clona el repositorio: `git clone https://github.com/tu_usuario/nombre_del_repositorio.git`
-2. Navega al directorio del proyecto: `cd nombre_del_repositorio`
-3. Instala las dependencias: `npm install`
 
 ## Autores
 
